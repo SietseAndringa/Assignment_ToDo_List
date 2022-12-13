@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+li {
+    list-style: none;
+}
+
+.list-section {
+    padding: 0;
+}
+
+.task-style, .task-style-done {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    border: 2px;
+    border-style: solid;
+    border-color:slategray;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: -2px;
+    padding: 20px;
+}
+
+.task-style-done {
+    text-decoration: line-through;
+}
+
+.delete-button {
+    flex-shrink: 0;
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
+
+.chk-box {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    order: -1;
+
+}
+
+.add-button {
+    border: none;
+    background-color: blueviolet;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+}
+
+.input-field {
+    font-size: 16px;
+    height: 30px;
+    width: 75%;
+    max-width: 400px;
+    border-color:slategrey;
+    border-style: solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:focus.input-field  {
+    outline: none;
+    border-color:blueviolet;
+    box-shadow: 0 0 5px blueviolet;
+}
+
+i {
+    color: blueviolet;
+}
